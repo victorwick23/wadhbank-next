@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "@prisma/client": "^3.2.1",
+    "@supabase/supabase-js": "^1.25.0",
     "@tailwindcss/typography": "^0.4.1",
-    "@types/node": "^16.11.1",
+    "@types/node": "^16.11.4",
     "@types/react": "^17.0.29",
     "babel-plugin-superjson-next": "^0.4.2",
     "next": "11.1.2",

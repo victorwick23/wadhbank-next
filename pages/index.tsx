@@ -219,42 +219,13 @@ export default function Home({ initialUsers }) {
         <button>Submit</button>
       </form>
 
-      {users.map((u, index) => {
-        return (
-          <>
-            <div className="flex" key={index}>
-              <p>
-                {u.fullName}| {u.email}
-              </p>
-            </div>
-            <input
-              className="bg-white rounded-sm border border-indigo-700"
-              type="text"
-              onChange={(e) => {
-                return setFullName(e.target.value);
-              }}
-              value={fullName}
-            />
-            <input
-              className="bg-white rounded-sm border border-indigo-700"
-              type="text"
-              onChange={(e) => {
-                return setEmail(e.target.value);
-              }}
-              value={email}
-            />
-
-            <button>Submit</button>
-          </>
-        );
-      })}
-
-     {users.map((u, index)=>
-     <div className="flex" key={index}>
-       <p> {u.id} |{u.fullName}| {u.email} | {formatDate(u.dateCreated)}</p>
-     </div>
-     )}
-      
+      {users.map((u, index) => (
+        <div className="flex" key={index}>
+          <p>
+            {u.id} |{u.fullName}| {u.email} | {formatDate(u.dateCreated)}
+          </p>
+        </div>
+      ))}
     </div>
   );
 }
